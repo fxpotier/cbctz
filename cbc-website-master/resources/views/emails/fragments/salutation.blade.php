@@ -1,0 +1,1 @@
+@lang('fragment/emails/courtesy.common.salutation', ['name' => $name])<br/><br/><br/>

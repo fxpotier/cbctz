@@ -1,0 +1,132 @@
+@fontCabinPath: "../fonts/cabin";
+@fontCabin: "cabin";
+.font-face(@fontCabin, '@{fontCabinPath}/regular', '@{fontCabin}-regular', 300);
+.font-face(@fontCabin, '@{fontCabinPath}/medium', '@{fontCabin}-medium');
+.font-face(@fontCabin, '@{fontCabinPath}/bold', '@{fontCabin}-bold', bold);
+
+@fontPtPath: "../fonts/pt-sans";
+@fontPt: "pt-sans";
+.font-face(@fontPt, '@{fontPtPath}/regular', '@{fontPt}-regular');
+.font-face(@fontPt, '@{fontPtPath}/bold', '@{fontPt}-bold', bold);
+
+html, body {height: 100%}
+
+body {
+  font-family: 'pt-sans' sans-serif;
+  font-size: 15px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: 'cabin' sans-serif;
+  font-weight: 200;
+  color: @brand-primary;
+}
+
+section {
+  padding: 30px 0 60px;
+}
+
+h1 {font-size: 40px}
+h2 {font-size: 32px}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.text-inverse {
+  color: @brand-inverse;
+}
+
+.text-default {
+  color: @brand-default;
+}
+
+.background-inverse {
+  h1, .h1, h2, .h2, h3, .h3 {
+    color: @brand-inverse;
+  }
+  background-color: @brand-primary;
+  color: @brand-inverse;
+}
+
+.background-gray{background-color:@gray-lighter}
+
+.vertical-center-container {
+  display: table;
+  width: 100%;
+  & .vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+legend {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+}
+
+.sidebar {
+  background-color: white;
+  position: fixed;
+}
+
+.btn-primary.btn-outline {
+  &.btn-inverse {
+    background-color: white;
+    color: @brand-primary;
+    border-color: #4cc4d1;
+    border-width: 1px;
+
+    &:hover {
+      color: white;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  .img {
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border: solid 2px white;
+  }
+}
+
+.cover-img {
+  width: 100%;
+  height: 200px;
+  .img {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+@media(max-width: @screen-sm) {
+  .sidebar {
+    position: initial;
+    height: initial;
+  }
+}
+
+.text-green {
+  color: #3dd83c;
+}

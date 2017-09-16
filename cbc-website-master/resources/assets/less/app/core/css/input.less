@@ -1,0 +1,25 @@
+input[type=range] {
+  .appearance(none);
+  background-color: @progress-bg;
+  height: @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border-radius: @progress-border-radius;
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+  padding: 1px 2px;
+
+  &:focus {
+    outline-width: 0;
+  }
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+
+.range-track(none, transparent, transparent);
+.range-thumb(@line-height-computed, @line-height-computed, @progress-border-radius, 0, @brand-primary);

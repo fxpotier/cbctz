@@ -1,0 +1,47 @@
+.experience.panel {
+  .transition(all .2s);
+
+  &:hover {
+    .box-shadow(0 0 10px lighten(@brand-primary, 10%));
+    border-color: @brand-primary;
+    .translate(0,-2px);
+  }
+
+  .panel-heading {
+    height: 200px;
+    color: #ffffff;
+    position: relative;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .grade-area {
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(0,0,0,0.8);
+      padding: 8px 8px;
+    }
+  }
+
+  .tags {
+    height: 65px;
+    overflow: hidden;
+  }
+
+  .panel-body {
+    h2 {
+      margin-top: 0;
+    }
+    background-color:@gray-lighter;
+    padding: 8px 8px;
+  }
+
+  a {
+    &:link {text-decoration:none}
+    .text-content {
+      color: @text-color;
+    }
+  }
+}

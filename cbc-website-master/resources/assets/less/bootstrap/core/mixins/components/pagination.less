@@ -1,0 +1,26 @@
+// Pagination
+
+.pagination-size(@padding-vertical; @padding-horizontal; @font-size; @border-radius) {
+  > li {
+    > a,
+    > span,
+    > select {
+      padding: @padding-vertical @padding-horizontal;
+      font-size: @font-size;
+    }
+    &:first-child {
+      > a,
+      > span,
+      > select {
+        .border-left-radius(@border-radius);
+      }
+    }
+    &:last-child {
+      > a,
+      > span,
+      > select {
+        .border-right-radius(@border-radius);
+      }
+    }
+  }
+}

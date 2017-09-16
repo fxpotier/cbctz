@@ -1,0 +1,27 @@
+.duplicable-selector-variant(@state, @bg, @text, @border) {
+  .duplicable-selector{
+	.duplicable-item {
+	  display: inline-block;
+	  border-radius: 5px;
+	  padding: 0 5px;
+	  margin: 0 5px;
+
+	  button {
+		margin-left: 5px;
+	  }
+	}
+  }
+  .duplicable-selector.@{state} {
+	.duplicable-item {
+	  background-color: @bg;
+	  color: @text;
+	  border: 1px solid @border;
+	}
+  }
+}
+
+.duplicable-selector-variant(success, @state-success-bg, @state-success-text, @state-success-border);
+.duplicable-selector-variant(info, @state-info-bg, @state-info-text, @state-info-border);
+.duplicable-selector-variant(warning, @state-warning-bg, @state-warning-text, @state-warning-border);
+.duplicable-selector-variant(danger, @state-danger-bg, @state-danger-text, @state-danger-border);
+.duplicable-selector-variant(royal, @state-royal-bg, @state-royal-text, @state-royal-border);

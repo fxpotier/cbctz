@@ -1,0 +1,192 @@
+.experience {
+  &.show {
+    h1, .h1, h2, .h2, h3, .h3 {
+      margin-top: 5px;
+    }
+
+    .angular-google-map-container { height: 400px; }
+
+    .content-left{
+      width: 80%;
+      padding-left: 50px;
+      padding-right: 50px;
+      float: left;
+    }
+
+    .content-right{
+      width: 20%;
+      float: left;
+    }
+
+    .header {
+      height: 360px;
+      background-position: center;
+      background-size: cover;
+
+      .darken {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+      }
+
+      .about-img{
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .carousel {
+      max-width: 930px;
+      margin: auto;
+    }
+
+    .profile-offset {
+      margin-top: -75px;
+    }
+
+    .profile-img {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    .img-comment {
+      height: 80px;
+      width: 80px;
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .text-comment {
+      width: 80%;
+      text-align: justify;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .details {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .meeting-point-marker {
+      font-size: 85px;
+    }
+
+    .label {
+      padding: 0.4em 1em 0.8em 1em;
+      margin: 2px 0;
+      display: inline-block;
+    }
+
+    .grade{vertical-align: middle}
+
+    .description {
+      line-height: 36px;
+      font-size: 18px;
+    }
+
+    .book {
+      width: 270px;
+      margin: auto;
+
+      .timepicker {
+        margin: -20px 0;
+        .btn-link {
+          padding: 0;
+        }
+      }
+
+      .select-offset {
+        margin-bottom: 6px;
+      }
+
+      .offset-tr {
+        width: 104px;
+        margin-top: 3px;
+        margin-left: -10px;
+      }
+
+      ul.detail {
+        list-style: none;
+        padding-left: 0;
+        li {
+          padding-left: 0;
+          &:not(:nth-child(2n+0)):before {
+            content: "\2022\00A0\00A0";
+          }
+
+          &:nth-child(2n+0):before {
+            content: "";
+          }
+        }
+      }
+    }
+
+    .date-picker {
+      .btn-info:active, .btn-info.active {
+        background-color: @btn-primary-bg;
+        border-color: @btn-primary-border;
+        color: @btn-primary-color;
+      }
+      .has-hours button:not(.active) {
+        background-color: @btn-success-bg;
+        border-color: @btn-success-border;
+        color: @btn-success-color;
+      }
+      table {
+        margin: auto;
+        thead {
+          tr {
+            height: 30px;
+            font-size: 12px;
+          }
+        }
+        td, th {
+          padding: 4px;
+        }
+      }
+      .btn-default {
+        border: none;
+      }
+
+      .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+        opacity: 0.3;
+      }
+    }
+
+
+    @media (min-width: 1620px) {
+      .content-left {
+        padding-left: 300px;
+        width: 1280px;
+      }
+    }
+
+    @media (max-width: 1620px) {
+      .content-left {
+        padding-left: 172px;
+        width: 992px;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      .content-left{width: 70%}
+      .content-right{width: 30%}
+    }
+
+    @media (max-width: 1120px) {
+      .content-left{
+        width: 60%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .content-right{width: 40%}
+    }
+
+    @media (max-width: 765px) {
+      .content-left{width: 100%}
+      .content-right{width: 100%}
+    }
+  }
+}

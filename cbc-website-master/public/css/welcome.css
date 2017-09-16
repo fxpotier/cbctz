@@ -1,0 +1,102 @@
+.community img {
+  margin-bottom: 4px;
+  transition: all 0.2s;
+}
+.community img:hover {
+  box-shadow: 0 0 10px #5094ce;
+  border-color: #337ab7;
+  opacity: 0.9;
+  -webkit-transform: translate(0, -2px);
+  -ms-transform: translate(0, -2px);
+  transform: translate(0, -2px);
+}
+header {
+  height: calc(88%);
+}
+header .jumbotron {
+  height: 100%;
+}
+header .header-background {
+  background: url('../img/app/welcome/header-bg.jpg') fixed center;
+  background-size: cover;
+}
+header .jumbotron h1,
+header .jumbotron h2,
+header .jumbotron h3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+header .jumbotron .btn-primary {
+  opacity: 0.9;
+}
+@media (max-width: 480px) {
+  header .jumbotron h1 {
+    font-size: 32px;
+  }
+  header .jumbotron h2 {
+    font-size: 18px;
+  }
+}
+header video {
+  width: 100%;
+  background-color: white;
+  height: 90%;
+  margin-top: 41px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  transition: all 2s ease;
+}
+header .fade-in {
+  opacity: 1;
+  z-index: 100;
+}
+header .fade-out {
+  opacity: 0;
+}
+.instructions img {
+  height: 120px;
+  padding: 10px;
+}
+.instructions .vertical-center {
+  padding-top: 40px;
+}
+.instructions .citizen {
+  text-align: right;
+}
+.instructions .citizen {
+  padding-left: 0;
+}
+.instructions .traveler {
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  .instructions .citizen,
+  .instructions .traveler {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .instructions .vertical-center {
+    padding-top: 0;
+  }
+}
+.map .map-background {
+  background: url('../img/app/welcome/map-bg.jpg') fixed center;
+  background-size: cover;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > .dropdown-toggle {
+  color: white;
+}

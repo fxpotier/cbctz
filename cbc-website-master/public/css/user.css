@@ -1,0 +1,66 @@
+html,
+body {
+  height: initial;
+  min-height: 100%;
+}
+body {
+  background-color: #eeeeee;
+}
+.container-min-height {
+  min-height: 608px;
+}
+.img-preview {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.sidebar {
+  margin-top: 26px;
+  padding-top: 15px;
+}
+.sidebar .sidebar-button {
+  padding: 15px;
+}
+.sidebar .nav > li > a:hover {
+  color: #ffffff;
+  background-color: #30adba;
+}
+.nav-justified {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.nav-justified > li > a,
+.nav-justified > li > span,
+.nav-justified > li > .dropdown-toggle {
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0;
+  background-color: white;
+  margin: 1px;
+}
+.nav-justified > li > a:hover,
+.nav-justified > li > span:hover,
+.nav-justified > li > .dropdown-toggle:hover {
+  color: #ffffff;
+  background-color: #30adba;
+}
+.picture .profile-preview {
+  width: 200px;
+}
+.picture .cover-preview {
+  width: 600px;
+}
+@media (min-width: 1200px) {
+  .sidebar {
+    margin-left: 45px;
+  }
+}

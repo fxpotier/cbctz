@@ -1,0 +1,49 @@
+header {
+  .jumbotron {height: 100%}
+
+  height: calc((100% - (@navbar-height - 38)));
+
+  .header-background {
+    background: url('../img/app/welcome/header-bg.jpg') fixed center;
+    background-size: cover;
+  }
+
+  .jumbotron {
+    h1, h2, h3 {
+      font-weight: 600;
+      color:#ffffff;
+    }
+
+    .btn-primary {opacity: 0.9}
+  }
+
+  @media(max-width: @screen-xs) {
+    .jumbotron {
+      h1 {font-size: 32px}
+      h2 {font-size: 18px}
+    }
+  }
+
+  video {
+    width: 100%;
+    background-color: white;
+    height: 90%;
+    margin-top: 41px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    .transition(all 2s ease);
+  }
+
+  .fade-in {
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .fade-out {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,265 @@
+.calendar .hours-input {
+  padding: 3px 0 3px 2px;
+  height: auto;
+  min-height: 34px;
+}
+.calendar .hours-input .label {
+  padding: 5px;
+  margin: 1px;
+  font-size: 100%;
+  font-weight: normal;
+  display: inline-block;
+}
+.calendar .hours-input .label .delete:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.calendar .date-picker .btn-info:active,
+.calendar .date-picker .btn-info.active {
+  background-color: #4cc4d1;
+  border-color: #38bdcc;
+  color: #ffffff;
+}
+.calendar .date-picker .has-hours button:not(.active) {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #ffffff;
+}
+.calendar .date-picker .not-available button:not(.active) {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  color: #ffffff;
+}
+.calendar .date-picker table thead tr {
+  height: 30px;
+  font-size: 12px;
+}
+.calendar .date-picker table td,
+.calendar .date-picker table th {
+  padding: 4px;
+}
+.calendar .date-picker .btn-default {
+  border: none;
+}
+.calendar .date-picker .btn.disabled,
+.calendar .date-picker .btn[disabled],
+.calendar .date-picker fieldset[disabled] .btn {
+  opacity: 0.3;
+}
+.experience.create .experience.panel .panel-body {
+  background-color: #fff;
+}
+.experience.create .pictures .help-block {
+  margin-top: 0;
+}
+.experience.create .pictures .thumbnail-preview {
+  width: 360px;
+}
+.experience.create .pictures .cover-preview {
+  width: 600px;
+}
+.experience.create .pictures .main-preview {
+  width: 356px;
+}
+.experience.create .input-group-addon input[type="checkbox"] {
+  margin-top: 2px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+.experience.create .add-container {
+  display: table;
+  width: 100%;
+}
+.experience.create .add-container .add {
+  height: 320px;
+  vertical-align: middle;
+  display: table-cell;
+  margin: auto;
+  color: #bbb;
+  font-size: 200px;
+}
+.experience.create .create-background {
+  height: 350px;
+  background: url('../img/app/experiences/create-bg.png') center;
+  background-size: cover;
+}
+.experience.create .panel-create .h2 {
+  margin-left: 15px;
+}
+.experience.show h1,
+.experience.show .h1,
+.experience.show h2,
+.experience.show .h2,
+.experience.show h3,
+.experience.show .h3 {
+  margin-top: 5px;
+}
+.experience.show .angular-google-map-container {
+  height: 400px;
+}
+.experience.show .content-left {
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+}
+.experience.show .content-right {
+  width: 20%;
+  float: left;
+}
+.experience.show .header {
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+}
+.experience.show .header .darken {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+.experience.show .header .about-img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.experience.show .carousel {
+  max-width: 930px;
+  margin: auto;
+}
+.experience.show .profile-offset {
+  margin-top: -75px;
+}
+.experience.show .profile-img {
+  display: inline-block;
+  margin-right: 30px;
+}
+.experience.show .img-comment {
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+.experience.show .text-comment {
+  width: 80%;
+  text-align: justify;
+  display: inline-block;
+  margin-left: 15px;
+}
+.experience.show .details {
+  display: inline-block;
+  vertical-align: top;
+}
+.experience.show .meeting-point-marker {
+  font-size: 85px;
+}
+.experience.show .label {
+  padding: 0.4em 1em 0.8em 1em;
+  margin: 2px 0;
+  display: inline-block;
+}
+.experience.show .grade {
+  vertical-align: middle;
+}
+.experience.show .description {
+  line-height: 36px;
+  font-size: 18px;
+}
+.experience.show .book {
+  width: 270px;
+  margin: auto;
+}
+.experience.show .book .timepicker {
+  margin: -20px 0;
+}
+.experience.show .book .timepicker .btn-link {
+  padding: 0;
+}
+.experience.show .book .select-offset {
+  margin-bottom: 6px;
+}
+.experience.show .book .offset-tr {
+  width: 104px;
+  margin-top: 3px;
+  margin-left: -10px;
+}
+.experience.show .book ul.detail {
+  list-style: none;
+  padding-left: 0;
+}
+.experience.show .book ul.detail li {
+  padding-left: 0;
+}
+.experience.show .book ul.detail li:not( :nth-child(2n+0)):before {
+  content: "\2022\00A0\00A0";
+}
+.experience.show .book ul.detail li:nth-child(2n+0):before {
+  content: "";
+}
+.experience.show .date-picker .btn-info:active,
+.experience.show .date-picker .btn-info.active {
+  background-color: #4cc4d1;
+  border-color: #38bdcc;
+  color: #ffffff;
+}
+.experience.show .date-picker .has-hours button:not(.active) {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #ffffff;
+}
+.experience.show .date-picker table {
+  margin: auto;
+}
+.experience.show .date-picker table thead tr {
+  height: 30px;
+  font-size: 12px;
+}
+.experience.show .date-picker table td,
+.experience.show .date-picker table th {
+  padding: 4px;
+}
+.experience.show .date-picker .btn-default {
+  border: none;
+}
+.experience.show .date-picker .btn.disabled,
+.experience.show .date-picker .btn[disabled],
+.experience.show .date-picker fieldset[disabled] .btn {
+  opacity: 0.3;
+}
+@media (min-width: 1620px) {
+  .experience.show .content-left {
+    padding-left: 300px;
+    width: 1280px;
+  }
+}
+@media (max-width: 1620px) {
+  .experience.show .content-left {
+    padding-left: 172px;
+    width: 992px;
+  }
+}
+@media (max-width: 1300px) {
+  .experience.show .content-left {
+    width: 70%;
+  }
+  .experience.show .content-right {
+    width: 30%;
+  }
+}
+@media (max-width: 1120px) {
+  .experience.show .content-left {
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .experience.show .content-right {
+    width: 40%;
+  }
+}
+@media (max-width: 765px) {
+  .experience.show .content-left {
+    width: 100%;
+  }
+  .experience.show .content-right {
+    width: 100%;
+  }
+}

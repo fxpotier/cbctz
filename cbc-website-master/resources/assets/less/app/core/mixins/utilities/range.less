@@ -1,0 +1,47 @@
+.range-track(@border, @color, @background) {
+  input[type="range"]::-moz-range-track {
+    border: @border;
+    color: @color;
+    background: @background;
+  }
+
+  input[type="range"]::-ms-track {
+    border: @border;
+    color: @color;
+    background: @background;
+  }
+
+  input[type="range"]::-ms-track {
+    border: @border;
+    color: @color;
+    background: @background;
+  }
+}
+
+.range-thumb(@width, @height, @border-radius, @border, @background-color) {
+  input[type="range"]::-ms-thumb {
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    border: @border;
+    background-color: @background-color;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    border: @border;
+    background-color: @background-color;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    border: @border;
+    background-color: @background-color;
+  }
+}

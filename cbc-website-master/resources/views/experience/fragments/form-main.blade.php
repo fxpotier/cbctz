@@ -1,0 +1,35 @@
+<input type="hidden" name="_token" value="{{csrf_token()}}"/>
+<fieldset>
+    <legend>@lang('view/experience/create.about.legend')</legend>
+    @include('experience.fragments.form-about')
+</fieldset>
+<br/>
+<fieldset>
+    <legend>@lang('view/experience/create.place.legend')</legend>
+    <br/>
+    @include('experience.fragments.form-place')
+</fieldset>
+<br/>
+<fieldset>
+    <legend>@lang('view/experience/create.meeting.legend')</legend>
+    <p>@lang('view/experience/create.meeting.legend-help')</p>
+    <br/>
+    @include('experience.fragments.form-meeting')
+</fieldset>
+<br/>
+<fieldset>
+    <legend>@lang('view/experience/create.practical.legend')</legend>
+    @include('experience.fragments.form-practical')
+</fieldset>
+<br/>
+<fieldset>
+    <legend>@lang('view/experience/create.price.legend')</legend>
+    @include('experience.fragments.form-price')
+</fieldset>
+<br/>
+<fieldset class="pictures">
+    <legend>@lang('view/experience/create.picture.legend')</legend>
+    <p>@lang('view/experience/create.picture.legend-help')</p>
+    <br/>
+    @include('experience.fragments.form-picture')
+</fieldset>

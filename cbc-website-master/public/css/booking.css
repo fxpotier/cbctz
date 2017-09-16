@@ -1,0 +1,33 @@
+.index .experience.panel {
+  transition: none 0.2s;
+}
+.index .experience.panel:hover {
+  box-shadow: 0 0 0 #4cc4d1;
+  border-color: #dddddd;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.index .experience.panel .details {
+  margin-bottom: 10px;
+}
+.index .experience.panel .text-link {
+  color: #4cc4d1;
+}
+.index .rate-input {
+  color: #ffdc1e;
+  font-size: 20px;
+}
+.guest .sign-in button[type="submit"] {
+  margin-top: 70px;
+}
+.experience-summary .cover {
+  height: 205px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.experience-summary .h2,
+.experience-summary .h3 {
+  margin-top: 0;
+}

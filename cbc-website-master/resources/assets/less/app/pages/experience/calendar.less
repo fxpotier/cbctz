@@ -1,0 +1,56 @@
+.calendar {
+  .hours-input {
+    padding: 3px 0 3px 2px;
+    height: auto;
+    min-height: 34px;
+
+    .label {
+      padding: 5px;
+      margin: 1px;
+      font-size: 100%;
+      font-weight: normal;
+      display: inline-block;
+
+      .delete:hover {
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .date-picker {
+    .btn-info:active, .btn-info.active {
+      background-color: @btn-primary-bg;
+      border-color: @btn-primary-border;
+      color: @btn-primary-color;
+    }
+    .has-hours button:not(.active) {
+      background-color: @btn-success-bg;
+      border-color: @btn-success-border;
+      color: @btn-success-color;
+    }
+    .not-available button:not(.active) {
+      background-color: @btn-danger-bg;
+      border-color: @btn-danger-border;
+      color: @btn-danger-color;
+    }
+    table {
+      thead {
+        tr {
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+      td, th {
+        padding: 4px;
+      }
+    }
+    .btn-default {
+      border: none;
+    }
+
+    .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@import "../bootstrap/core/mixins";
+@import "../bootstrap/core/variables";
+@import "../app/core/variables";
+
+tags-input {
+  border: none;
+  padding: 0;
+  min-height: 34px;
+}
+tags-input .host {
+  margin: 0;
+}
+tags-input .tags {
+  background-color: @input-bg;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid @input-border;
+  border-radius: @border-radius-base;
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+tags-input .tags .tag-item {
+  color: @btn-info-color;
+  background: @btn-info-bg;
+  border: 1px solid @btn-info-border;
+  border-radius: @border-radius-base;
+}
+tags-input .tags .tag-item.selected {
+  color: @btn-danger-color;
+  background: @btn-danger-bg;
+  border: 1px solid @btn-danger-border;
+}
+tags-input .tags .tag-item .remove-button {
+  margin: 0 0 0 5px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold;
+  color: @badge-color;
+}
+tags-input .tags .tag-item .remove-button:hover {
+  text-decoration: none;
+}
+tags-input .tags.focused {
+  border: 1px solid @input-border-focus;
+  .box-shadow(0 0 10px @input-border-focus);
+}
+tags-input .autocomplete {
+  margin-top: 5px;
+  position: absolute;
+  padding: 5px 0;
+  z-index: 999;
+  min-width: 160px;
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-border;
+  .box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+  border-radius: @border-radius-base;
+}
+tags-input .autocomplete .suggestion-item.selected {
+  color: @dropdown-link-active-color;
+  background-color: @dropdown-link-active-bg;
+}
+tags-input.ng-invalid .tags {
+  border-color: @brand-danger;
+  .box-shadow(0 0 10px @brand-danger);
+}
+tags-input[disabled] .tags {
+  background-color: @gray-dark;
+}
+tags-input[disabled] .tags .tag-item {
+  background: @brand-primary;
+  opacity: 0.65;
+}
+tags-input[disabled] .tags .input {
+  background-color: @gray-dark;
+}
+.input-group tags-input {
+  padding: 0;
+  display: table-cell;
+}
+.input-group tags-input:not(:first-child) .tags {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group tags-input:not(:last-child) .tags {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group-lg tags-input:first-child .tags {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.input-group-lg tags-input:last-child .tags {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-sm tags-input:first-child .tags {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.input-group-sm tags-input:last-child .tags {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+tags-input.ti-input-lg, .input-group-lg tags-input {
+  min-height: 46px;
+}
+tags-input.ti-input-lg .tags, .input-group-lg tags-input .tags {
+  border-radius: 6px;
+}
+tags-input.ti-input-lg .tags .tag-item, .input-group-lg tags-input .tags .tag-item {
+  height: 38px;
+  line-height: 37px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+tags-input.ti-input-lg .tags .tag-item .remove-button, .input-group-lg tags-input .tags .tag-item .remove-button {
+  font-size: 20px;
+}
+tags-input.ti-input-lg .tags .input, .input-group-lg tags-input .tags .input {
+  height: 38px;
+  font-size: 18px;
+}
+tags-input.ti-input-sm, .input-group-sm tags-input {
+  min-height: 30px;
+}
+tags-input.ti-input-sm .tags, .input-group-sm tags-input .tags {
+  border-radius: 3px;
+}
+tags-input.ti-input-sm .tags .tag-item, .input-group-sm tags-input .tags .tag-item {
+  height: 22px;
+  line-height: 21px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+tags-input.ti-input-sm .tags .tag-item .remove-button, .input-group-sm tags-input .tags .tag-item .remove-button {
+  font-size: 16px;
+}
+tags-input.ti-input-sm .tags .input, .input-group-sm tags-input .tags .input {
+  height: 22px;
+  font-size: 12px;
+}
+.has-feedback tags-input .tags {
+  padding-right: 30px;
+}
+.has-success tags-input .tags {
+  border-color: @state-success-text;
+}
+.has-success tags-input .tags.focused {
+  border-color: @state-success-text;
+  .box-shadow(0 0 10px @state-success-text);
+}
+.has-error tags-input .tags {
+  border-color: @state-danger-text;
+}
+.has-error tags-input .tags.focused {
+  border-color: @state-danger-text;
+  .box-shadow(0 0 10px @state-danger-text);
+}
+.has-warning tags-input .tags {
+  border-color: @state-warning-text;
+}
+.has-warning tags-input .tags.focused {
+  border-color: @state-warning-text;
+  .box-shadow(0 0 10px @state-warning-text);}

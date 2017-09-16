@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: CityByCitizen
+        psr4_prefix: CityByCitizen
+        src_path: app

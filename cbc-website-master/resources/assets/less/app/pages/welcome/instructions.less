@@ -1,0 +1,17 @@
+.instructions {
+  img {
+    height: 120px;
+    padding: 10px;
+  }
+
+  .vertical-center {padding-top: 40px}
+
+  .citizen {text-align: right}
+  .citizen {padding-left: 0}
+  .traveler {padding-right: 0}
+
+  @media(max-width: @screen-sm) {
+    .citizen, .traveler {text-align: center; padding: 0 15px}
+    .vertical-center {padding-top: 0}
+  }
+}

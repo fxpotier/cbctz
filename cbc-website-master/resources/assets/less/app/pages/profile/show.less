@@ -1,0 +1,52 @@
+.profile {
+  &.show {
+    .header {
+      height: 360px;
+      background-position: center;
+      background-size: cover;
+    }
+    .profile-img {
+      margin-top: -75px;
+      display: inline-block;
+    }
+
+    .img-comment {
+      height: 80px;
+      width: 80px;
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .text-comment {
+      width: 80%;
+      text-align: justify;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .details {
+      margin-left: 15px;
+      display: inline-block;
+      vertical-align: top;
+      h1, .h3 {
+        margin-top: 5px;
+      }
+      &.left {
+        margin-right: 30px;
+      }
+      &.right {
+        margin-top: 10px;
+        .h3 {
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+    .description {
+      line-height: 36px;
+      font-size: 18px;
+    }
+  }
+}

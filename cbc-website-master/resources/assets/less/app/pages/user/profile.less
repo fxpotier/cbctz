@@ -1,0 +1,40 @@
+.sidebar {
+  margin-top: 26px;
+  padding-top: 15px;
+  .sidebar-button {padding: 15px}
+
+  .nav > li > a:hover {
+    color: #ffffff;
+    background-color: darken(@brand-primary, 10%);
+  }
+}
+
+.nav-justified{
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.nav-justified > li > a, .nav-justified > li > span, .nav-justified > li > .dropdown-toggle {
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0;
+  background-color: white;
+  margin: 1px;
+  &:hover {
+    color: #ffffff;
+    background-color: darken(@brand-primary, 10%);
+  }
+}
+
+.picture {
+  .profile-preview {width: 200px}
+  .cover-preview {width: 600px}
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    margin-left: 45px;
+  }
+}

@@ -1,0 +1,72 @@
+.sidebar-offset {
+  top: @navbar-height+1;
+}
+
+.navbar-default .navbar-nav > .open > .dropdown-toggle, .navbar-default .navbar-nav > .open > .dropdown-toggle:hover, .navbar-default .navbar-nav > .open > .dropdown-toggle:focus {
+  color: #4cc4d1;
+  background-color: transparent;
+}
+
+.navbar-right .dropdown-menu {
+  right: -3px;
+}
+
+.navbar{
+  margin-bottom: 0;
+  z-index: 10;
+  .box-shadow(2px 2px 2px 0px rgba(0,0,0,0.1));
+  .navbar-brand {
+    padding: 0;
+    & > img {
+      height: 100%;
+      display: inline-block;
+    }
+    .logo {
+      max-height: @navbar-height;
+      width: @navbar-height;
+      padding: 7px;
+    }
+    .brand {
+      padding: 15px 0;
+    }
+  }
+  .navbar-nav{
+    .divider-right {
+      border-color: lighten(@text-color, 55%);
+    }
+    text-transform: uppercase;
+    font-size: 15px;
+    .btn {
+      display: inline;
+      padding: 14px 16px;
+    }
+  }
+}
+
+.navbar .divider-vertical {
+  height: @navbar-height / 1.5;
+  margin: @navbar-padding-vertical / 2 0px;
+  & > a { margin-top: -@navbar-padding-vertical / 2}
+}
+
+@media(max-width: @screen-sm) {
+  .navbar .divider-vertical {
+    height: @navbar-padding-vertical;
+    margin: 0;
+    & > a { margin-top: 0}
+  }
+}
+
+@media(max-width: @screen-xs) {
+  .navbar{
+    .navbar-brand {
+      .logo {
+        max-height: @navbar-height / 1.5;
+        width: @navbar-height / 1.5;
+      }
+      .brand {
+        padding: @navbar-padding-vertical / 1.2 0;
+      }
+    }
+  }
+}

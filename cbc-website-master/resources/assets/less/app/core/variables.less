@@ -1,0 +1,34 @@
+@brand-default:         #333333;
+@brand-primary:         #4cc4d1;
+@brand-inverse:         #ffffff;
+@brand-success:         #5cb85c;
+@brand-info:            #f8746b;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+
+// Basics of a navbar
+@navbar-height:75px;
+
+@navbar-default-color:                     @brand-primary;
+@navbar-default-bg:                        @brand-inverse;
+@navbar-default-border:                    darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color:                black;
+@navbar-default-link-hover-color:          lighten(@brand-primary, 20%);
+
+@navbar-default-link-active-color:         @brand-inverse;
+@navbar-default-link-active-bg:            lighten(@brand-primary, 30%);
+@navbar-default-link-disabled-color:       darken(@navbar-default-link-active-color, 6.5%);
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           @brand-inverse;
+@navbar-default-toggle-icon-bar-bg:        @brand-primary;
+@navbar-default-toggle-border-color:       @brand-inverse;
+
+@navbar-divider-color:                     darken(@navbar-default-bg, 20%);

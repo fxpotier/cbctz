@@ -1,0 +1,13 @@
+.divider-vertical {
+  &.divider-right {border-right: 1px solid }
+  &.divider-left {border-left: 1px solid }
+  &.divider-both {border-left: 1px solid;border-right: 1px solid;}
+}
+
+@media(max-width: @screen-sm) {
+  .divider-vertical {
+    &.divider-right {border:none}
+    &.divider-left {border:none}
+    &.divider-both {border:none}
+  }
+}

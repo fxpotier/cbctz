@@ -1,0 +1,10 @@
+.about .about-heading {
+  text-align: center;
+  padding-top: 65px;
+}
+.about .panel-heading,
+.about .panel-footer {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}

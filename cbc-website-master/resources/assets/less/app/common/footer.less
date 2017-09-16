@@ -1,0 +1,29 @@
+footer {
+  background-color: lighten(@gray-lighter, 3%);
+
+  a {
+    color: @text-color;
+  }
+
+  .social-network {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding-top: 2px;
+    border: @text-color 2px solid;
+    color: @text-color;
+    &:hover {
+      border-color: @brand-primary;
+      color: @brand-primary;
+    }
+  }
+
+  .glyphicon-heart {
+    color: #ff726a;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: @screen-sm) {
+  footer {text-align: center}
+}
